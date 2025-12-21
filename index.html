@@ -54,7 +54,7 @@
               <span>Consultoría · análisis crítico · automatización</span>
             </div>
 
-            <h1 class="fade-up delay-1">Datos en decisiones.</h1>
+            <h1 class="fade-up delay-1">Transforma tus datos en decisiones.</h1>
 
             <p class="lead fade-up delay-2">
               En Rodil Data Studio ayudamos a empresas y PyMEs que quieren dejar de trabajar a ciegas y quieren <b>entender</b> qué está pasando y qué <b>decisiones</b> tomar.
@@ -65,21 +65,76 @@
               <a class="btn primary" href="#contacto">Contame tu caso</a>
               <a class="btn" href="#servicios">Ver servicios</a>
             </div>
-
-            <p class="subtle">
-              Menos Excel, métricas bien definidas y reportes a tiempo.
-            </p>
           </div>
 
-          <!-- HERO CARD: solo 2 KPIs grandes -->
-          <aside class="hero-card fade-up delay-2" aria-label="Resumen de enfoque">
-            <div style="font-weight:800; font-size:16px; margin-bottom:8px;">
-              Claridad + Criterio + Automatización
-            </div>
-            <div style="color:var(--muted); font-size:13.5px; line-height:1.6; margin-bottom:4px;">
-              Nuestro objetivo es que tengas información confiable, en el momento justo, para decidir mejor.
-            </div>
-          </aside>
+          <div class="hero-visual" aria-hidden="true">
+            <svg viewBox="0 0 600 400" fill="none" class="data-chart">
+              <defs>
+                <!-- Grid pattern -->
+                <pattern id="grid" width="60" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 60 0 L 0 0 0 40" fill="none" stroke="rgba(6,52,88,0.12)" stroke-width="1"/>
+                </pattern>
+                <!-- Gradientes -->
+                <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgba(6,52,88,0.4);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgba(6,52,88,0.75);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="lineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgba(6,52,88,0.25);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgba(6,52,88,0.45);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="lineGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgba(6,52,88,0.2);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgba(6,52,88,0.35);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              
+              <!-- Fondo blanco sólido para el gráfico -->
+              <rect width="600" height="400" fill="#ffffff" />
+              <!-- Grid de fondo -->
+              <rect width="600" height="400" fill="url(#grid)" />
+              
+              <!-- Área sombreada bajo línea principal -->
+              <polygon
+                points="50,300 120,240 190,260 270,200 350,220 430,160 550,180 550,400 50,400"
+                fill="rgba(6,52,88,0.08)"
+                class="chart-area"
+              />
+              
+              <!-- Líneas del gráfico -->
+              <polyline
+                points="50,340 120,300 190,320 270,260 350,280 430,230 550,250"
+                stroke="url(#lineGrad3)"
+                stroke-width="3.5"
+                fill="none"
+                class="chart-line"
+              />
+              <polyline
+                points="50,260 120,220 190,240 270,180 350,200 430,150 550,170"
+                stroke="url(#lineGrad2)"
+                stroke-width="3.5"
+                fill="none"
+                class="chart-line"
+              />
+              <polyline
+                points="50,300 120,240 190,260 270,200 350,220 430,160 550,180"
+                stroke="url(#lineGrad1)"
+                stroke-width="4.5"
+                fill="none"
+                class="chart-line chart-line-main"
+              />
+              
+              <!-- Puntos de datos en línea principal -->
+              <circle cx="50" cy="300" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+              <circle cx="120" cy="240" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+              <circle cx="190" cy="260" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+              <circle cx="270" cy="200" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+              <circle cx="350" cy="220" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+              <circle cx="430" cy="160" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+              <circle cx="550" cy="180" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
+            </svg>
+          </div>
+
         </div>
       </div>
 
@@ -122,7 +177,7 @@
 
             <div class="card">
             <div class="pill">Acompañamiento</div>
-            <h3>Acompañamiento continuo</h3>
+            <h3>Soporte Estratégico</h3>
             <p>
                 No entregamos un tablero y nos vamos. Acompañamos para interpretar datos,
                 ajustar indicadores y adaptar la solución a medida que el negocio crece.
@@ -153,7 +208,7 @@
             <div class="num">2</div>
             <div>
               <h4>Auditoría de datos y definición de métricas</h4>
-              <p>Calidad, duplicados, definiciones, fuentes. Si la métrica no está bien definida, el tablero es decoración.</p>
+              <p>Calidad, duplicados, definiciones, fuentes. Métricas bien definidas para que el tablero no sea solo decoración.</p>
             </div>
           </div>
 
@@ -161,15 +216,15 @@
             <div class="num">3</div>
             <div>
               <h4>Construcción + automatización</h4>
-              <p>Modelado, transformación, visualización. Todo lo posible queda estable para que no dependa de "hacerlo a mano".</p>
+              <p>Modelado, transformación y visualización. Todos los datos posibles quedan estable para que no dependa del trabajo manual.</p>
             </div>
           </div>
 
           <div class="step">
             <div class="num">4</div>
             <div>
-              <h4>Entrega, explicación y handoff</h4>
-              <p>No entrego "una pantalla". Entrego lectura, criterios y mantenimiento claro para que escale.</p>
+              <h4>Entrega y capacitación</h4>
+              <p>No entrego "una pantalla". Entrego lectura, criterios y acompañamiento para que negocio escale en base a datos reales.</p>
             </div>
           </div>
         </div>
@@ -217,7 +272,7 @@
         </div>
     </section>
 
-      <!-- CONTACTO OPTIMIZADO -->
+      <!-- CONTACTO -->
       <section id="contacto">
         <div class="section-title">
           <div>
@@ -245,19 +300,30 @@
               </div>
 
               <div class="field">
-                <label for="message">¿En que puedo ayudarte?</label>
+                <label for="message">¿En qué puedo ayudarte?</label>
                 <p class="subtle" style="margin-top:8px;">
-                    Contame qué decisión querés tomar con datos y de dónde salen (Excel, ERP, DB, etc).
+                  Contame qué decisión querés tomar con datos y de dónde salen (Excel, ERP, DB, etc).
                 </p>
                 <textarea id="message" name="message" placeholder="Ej: Quiero entender rentabilidad por producto y automatizar reportes semanales." required></textarea>
               </div>
 
               <button class="btn primary" type="submit">Enviar</button>
-              
             </form>
           </div>
 
+          <aside class="contact-aside">
+            <div class="contact-card">
+              <h4>Claridad antes de decidir</h4>
+              <p>
+                No necesitás tener todo resuelto. Te ayudamos a ordenar la información,
+                entender qué está pasando y decidir con datos confiables.
+              </p>
+            </div>
+          </aside>
+
+        </div>
       </section>
+
 
       <footer>
         <div class="footer-row container">
@@ -273,6 +339,20 @@
   </main>
 
   <script>
+    // Scroll to top al cargar la página
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+    
+    // También asegurar scroll to top si hay hash en la URL
+    if (window.location.hash) {
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 100);
+      });
+    }
+
     document.getElementById('year').textContent = new Date().getFullYear()
 
     document.getElementById('contactForm').addEventListener('submit', (e) => {

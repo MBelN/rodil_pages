@@ -6,37 +6,40 @@
   <title>Rodil Data Studio – Datos en decisiones</title>
   <meta name="description" content="Rodil Data Studio: análisis crítico, automatización y visualización para transformar datos en decisiones." />
 
-  <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 </head>
 
 <body>
+  <div class="page-content">
     <div class="bg-motion" aria-hidden="true"></div>
-  <header>
+    
+  <header class="header">
     <div class="container">
-      <div class="nav">
-        <a class="brand" href="#top">
+      <div class="nav header-nav">
+        <a class="brand header-brand" href="#top">
           <img src="logo-rodil.png" alt="Rodil Data Studio" onerror="this.style.display='none'">
-          <div class="name">
+          <div class="name header-name">
             <strong>RODIL</strong>
             <span>DATA STUDIO</span>
           </div>
         </a>
 
-        <nav aria-label="Secciones">
+        <nav class="header-menu" aria-label="Secciones">
           <ul>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#metodo">Método</a></li>
             <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#sobre-rodil">Nosotros</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
 
-        <div class="nav-actions">
+        <div class="nav-actions header-actions">
           <a class="btn primary" href="#contacto">Hablemos</a>
         </div>
       </div>
@@ -45,200 +48,228 @@
 
   <main id="top">
     <div class="container">
-      <!-- HERO OPTIMIZADO -->
       <div class="hero">
         <div class="hero-grid">
-          <div>
-            <div class="badge fade-up">
+          <div class="hero-content">
+            <div class="badge hero-badge fade-up">
               <span class="dot"></span>
               <span>Consultoría · análisis crítico · automatización</span>
             </div>
 
-            <h1 class="fade-up delay-1">Transforma tus datos en decisiones.</h1>
+            <h1 class="hero-title fade-up delay-1">Transforma tus datos en decisiones.</h1>
 
-            <p class="lead fade-up delay-2">
-              En Rodil Data Studio ayudamos a empresas y PyMEs que quieren dejar de trabajar a ciegas y quieren <b>entender</b> qué está pasando y qué <b>decisiones</b> tomar.
-              Datos claros, ordenados y siempre actualizados.
+            <p class="lead hero-lead fade-up delay-2">
+              Ayudamos a PyMEs a ordenar su información, automatizar reportes y entender qué está pasando en su negocio para decidir mejor, ahorrar tiempo y mejorar resultados.
             </p>
 
-            <div class="cta fade-up delay-3">
-              <a class="btn primary" href="#contacto">Contame tu caso</a>
+            <div class="cta hero-cta fade-up delay-3">
+              <a class="btn primary" href="#contacto">Potenciá tus datos</a>
               <a class="btn" href="#servicios">Ver servicios</a>
             </div>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <svg viewBox="0 0 600 400" fill="none" class="data-chart">
-              <defs>
-                <!-- Grid pattern -->
-                <pattern id="grid" width="60" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 60 0 L 0 0 0 40" fill="none" stroke="rgba(6,52,88,0.12)" stroke-width="1"/>
-                </pattern>
-                <!-- Gradientes -->
-                <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:rgba(6,52,88,0.4);stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:rgba(6,52,88,0.75);stop-opacity:1" />
-                </linearGradient>
-                <linearGradient id="lineGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:rgba(6,52,88,0.25);stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:rgba(6,52,88,0.45);stop-opacity:1" />
-                </linearGradient>
-                <linearGradient id="lineGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:rgba(6,52,88,0.2);stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:rgba(6,52,88,0.35);stop-opacity:1" />
-                </linearGradient>
-              </defs>
-              
-              <!-- Fondo blanco sólido para el gráfico -->
-              <rect width="600" height="400" fill="#ffffff" />
-              <!-- Grid de fondo -->
-              <rect width="600" height="400" fill="url(#grid)" />
-              
-              <!-- Área sombreada bajo línea principal -->
-              <polygon
-                points="50,300 120,240 190,260 270,200 350,220 430,160 550,180 550,400 50,400"
-                fill="rgba(6,52,88,0.08)"
-                class="chart-area"
-              />
-              
-              <!-- Líneas del gráfico -->
-              <polyline
-                points="50,340 120,300 190,320 270,260 350,280 430,230 550,250"
-                stroke="url(#lineGrad3)"
-                stroke-width="3.5"
-                fill="none"
-                class="chart-line"
-              />
-              <polyline
-                points="50,260 120,220 190,240 270,180 350,200 430,150 550,170"
-                stroke="url(#lineGrad2)"
-                stroke-width="3.5"
-                fill="none"
-                class="chart-line"
-              />
-              <polyline
-                points="50,300 120,240 190,260 270,200 350,220 430,160 550,180"
-                stroke="url(#lineGrad1)"
-                stroke-width="4.5"
-                fill="none"
-                class="chart-line chart-line-main"
-              />
-              
-              <!-- Puntos de datos en línea principal -->
-              <circle cx="50" cy="300" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-              <circle cx="120" cy="240" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-              <circle cx="190" cy="260" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-              <circle cx="270" cy="200" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-              <circle cx="350" cy="220" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-              <circle cx="430" cy="160" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-              <circle cx="550" cy="180" r="5" fill="rgba(6,52,88,0.9)" stroke="#ffffff" stroke-width="2" class="data-point" />
-            </svg>
+          <div class="hero-visual">
+            <div class="hero-visual-content">
+              <div class="metric-card hero-metric">
+                <div class="metric-value">+85%</div>
+                <div class="metric-label">Claridad</div>
+              </div>
+              <div class="metric-card hero-metric">
+                <div class="metric-value">-60%</div>
+                <div class="metric-label">Tiempo</div>
+              </div>
+              <div class="data-flow hero-data-flow"></div>
+            </div>
           </div>
 
         </div>
       </div>
+    </div>
 
-      <!-- SERVICIOS -->
-      <section id="servicios">
-        <div class="section-title">
-            <div>
-            <h2>Servicios</h2>
-            <p>Lo que hacemos.</p>
+          <!-- PROBLEMAS Y SOLUCIONES -->
+          <section id="problemas-soluciones" class="comparison comparison-section">
+            <div class="container">
+                <div class="section-header comparison-header text-center">
+                    <h2>De la incertidumbre a la claridad</h2>
+                    <p>Transformamos tus obstáculos diarios en ventajas competitivas.</p>
+                </div>
+        
+                <div class="comparison-grid">
+                    <div class="comp-row comparison-row">
+                        <div class="comp-col problem comparison-problem">
+                            <h4>El Problema</h4>
+                            <p>Tenés muchos datos acumulados, pero no sabés qué significan realmente.</p>
+                        </div>
+                         <div class="comp-divider comparison-divider">
+                             <div class="comp-icon comparison-icon">→</div>
+                         </div>
+                        <div class="comp-col solution comparison-solution">
+                            <h4>Solución Rodil</h4>
+                            <p>Ordenamos y centralizamos tu información para que tenga sentido.</p>
+                        </div>
+                    </div>
+        
+                    <div class="comp-row comparison-row">
+                        <div class="comp-col problem comparison-problem">
+                            <h4>El Problema</h4>
+                            <p>Tomás decisiones importantes basándote solo en la intuición.</p>
+                        </div>
+                         <div class="comp-divider comparison-divider">
+                             <div class="comp-icon comparison-icon">→</div>
+                         </div>
+                        <div class="comp-col solution comparison-solution">
+                            <h4>Solución Rodil</h4>
+                            <p>Te damos tableros claros para decidir con seguridad y datos duros.</p>
+                        </div>
+                    </div>
+        
+                    <div class="comp-row comparison-row">
+                        <div class="comp-col problem comparison-problem">
+                            <h4>El Problema</h4>
+                            <p>Perdés horas (o días) armando reportes manuales en Excel.</p>
+                        </div>
+                         <div class="comp-divider comparison-divider">
+                             <div class="comp-icon comparison-icon">→</div>
+                         </div>
+                        <div class="comp-col solution comparison-solution">
+                            <h4>Solución Rodil</h4>
+                            <p>Automatizamos todo. Tus reportes están listos en tiempo real.</p>
+                        </div>
+                    </div>
+        
+                    <div class="comp-row comparison-row">
+                        <div class="comp-col problem comparison-problem">
+                            <h4>El Problema</h4>
+                            <p>Cada área de la empresa maneja su propia información aislada.</p>
+                        </div>
+                         <div class="comp-divider comparison-divider">
+                             <div class="comp-icon comparison-icon">→</div>
+                         </div>
+                        <div class="comp-col solution comparison-solution">
+                            <h4>Solución Rodil</h4>
+                            <p>Cruzamos los datos para detectar patrones y oportunidades ocultas.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+          </section>
 
-        <div class="grid-4">
-            <div class="card">
-            <div class="pill">Estructura</div>
-            <h3>Orden y centralización de datos</h3>
-            <p>
-                Creamos bases de datos centralizadas en la nube para que la información sea confiable,
-                accesible y escalable sin perder control.
-            </p>
+      <section id="servicios" class="services section-dark">
+        <div class="container">
+            <div class="section-title services-title">
+                <div>
+                <h2>Servicios</h2>
+                <p>Soluciones concretas para problemas de datos.</p>
+                </div>
             </div>
 
-            <div class="card">
-            <div class="pill">Automatización</div>
-            <h3>Menos carga manual</h3>
-            <p>
-                Eliminamos tareas manuales: carga y limpieza de Excel, integración de datos,
-                actualización automática y menos errores operativos.
-            </p>
-            </div>
+            <div class="grid-4 services-grid">
+                <div class="card services-card">
+                <div class="pill">Estructura de Datos</div>
+                <h3>Orden y control de la información</h3>
+                <p>
+                  Unificamos toda la información en la nube para que dejen de estar dispersos en planillas, sistemas aislados o archivos sueltos.
+                </p>
+                </div>
 
-            <div class="card">
-            <div class="pill">Diseño</div>
-            <h3>Tableros interactivos en Power BI</h3>
-            <p>
-                Para dueños, gerentes y responsables de área.
-                Ventas, clientes, productos e indicadores clave en un solo lugar y siempre actualizados.
-            </p>
-            </div>
+                <div class="card services-card">
+                <div class="pill">Automatización</div>
+                <h3>Menos carga manual</h3>
+                <p>
+                  Eliminamos la carga manual de información y los reportes hechos a mano. Automatizamos la actualización de datos, la limpieza de información y la integración entre fuentes.
+                </p>
+                </div>
 
-            <div class="card">
-            <div class="pill">Acompañamiento</div>
-            <h3>Soporte Estratégico</h3>
-            <p>
-                No entregamos un tablero y nos vamos. Acompañamos para interpretar datos,
-                ajustar indicadores y adaptar la solución a medida que el negocio crece.
-            </p>
+                <div class="card services-card">
+                <div class="pill">Visualización</div>
+                <h3>Tableros claros para decidir</h3>
+                <p>
+                  Diseñamos dashboards interactivos en Power BI pensados para dueños, gerentes y responsables de área. Ventas, clientes, productos y métricas clave en un solo lugar, de forma simple y visual.
+                </p>
+                </div>
+
+                <div class="card services-card">
+                <div class="pill">Acompañamiento</div>
+                <h3>Soporte estratégico</h3>
+                <p>
+                  No entregamos un tablero y desaparecemos. Acompañamos a tu equipo para interpretar la información, ajustar indicadores y adaptar la solución a medida que el negocio crece
+                </p>
+                </div>
             </div>
         </div>
       </section>
 
-      <!-- MÉTODO -->
-      <section id="metodo">
-        <div class="section-title">
-          <div>
-            <h2>Método</h2>
-            <p>Un proceso simple, para evitar proyectos eternos.</p>
-          </div>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="num">1</div>
+      <section id="metodo" class="method">
+        <div class="container">
+            <div class="section-title method-title">
             <div>
-              <h4>Entender el negocio</h4>
-              <p>Qué se decide, con qué frecuencia, quién usa el dato y cuál es el costo de equivocarse.</p>
+                <h2>Cómo trabajamos</h2>
+                <p>Un proceso simple, sin complicaciones técnicas.</p>
             </div>
-          </div>
+            </div>
 
-          <div class="step">
-            <div class="num">2</div>
-            <div>
-              <h4>Auditoría de datos y definición de métricas</h4>
-              <p>Calidad, duplicados, definiciones, fuentes. Métricas bien definidas para que el tablero no sea solo decoración.</p>
+            <div class="steps method-steps">
+            <div class="step method-step">
+                <div class="num">1</div>
+                <div>
+                <h4>Entendemos tu negocio</h4>
+                <p>Analizamos qué decisiones tomás, qué datos usas y definimos qué información es realmente necesaria para gestionar mejor el negocio.</p>
+                </div>
             </div>
-          </div>
 
-          <div class="step">
-            <div class="num">3</div>
-            <div>
-              <h4>Construcción + automatización</h4>
-              <p>Modelado, transformación y visualización. Todos los datos posibles quedan estable para que no dependa del trabajo manual.</p>
+            <div class="step method-step">
+                <div class="num">2</div>
+                <div>
+                <h4>Ordenamos y analizamos tus datos</h4>
+                <p>Revisamos tus datos actuales, limpiamos lo importante y definimos métricas claras que realmente sirvan para decidir.</p>
+                </div>
             </div>
-          </div>
 
-          <div class="step">
-            <div class="num">4</div>
-            <div>
-              <h4>Entrega y capacitación</h4>
-              <p>No entrego "una pantalla". Entrego lectura, criterios y acompañamiento para que negocio escale en base a datos reales.</p>
+            <div class="step method-step">
+                <div class="num">3</div>
+                <div>
+                <h4>Construimos reportes claros y automáticos</h4>
+                <p>Creamos tableros simples y visuales que se actualizan solos, para que tengas la información correcta cuando la necesitás.</p>
+                </div>
             </div>
-          </div>
+
+            <div class="step method-step">
+                <div class="num">4</div>
+                <div>
+                <h4>Entrega y Capacitación</h4>
+                <p>Te enseñamos a usar la herramienta hasta que los datos se conviertan en parte natural de tu gestión diaria. Te ayudamos a interpretarlos y usarlos para mejorar resultados reales.</p>
+                </div>
+            </div>
+            </div>
         </div>
       </section>
 
-      <section id="clientes">
-        <div class="section-title">
-            <div>
-            <h2>Clientes actuales</h2>
-            <p>Empresas que confian en nosotros.</p>
+      <section id="sobre-rodil" class="about section-dark">
+        <div class="container">
+            <div class="section-title about-title">
+                <div>
+                    <h2>Sobre Rodil Data Studio</h2>
+                    <p>Nuestra misión y enfoque</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <p>Rodil Data Studio nace con una misión clara: democratizar la inteligencia de negocios para las PyMEs.</p>
+                <p>Sabemos que muchas empresas sienten que tienen "muchos datos pero poca información". Las planillas de Excel se vuelven inmanejables, los sistemas de gestión son rígidos y las decisiones importantes se terminan tomando por intuición.</p>
+                <p>Nosotros combinamos la capacidad técnica de análisis de datos con una visión comercial pragmática. No vendemos tecnología por tecnología; vendemos claridad, ahorro de tiempo y mejores decisiones.</p>
+            </div>
+        </div>
+      </section>
+
+      <section id="clientes" class="clients">
+        <div class="container">
+            <div class="section-title clients-title">
+                <div>
+                <h2>Confían en nosotros</h2>
+                </div>
             </div>
         </div>
 
-        <div class="marquee" aria-label="Clientes actuales">
+        <div class="marquee clients-marquee" aria-label="Clientes actuales">
             <div class="marquee__track">
             <div class="marquee__group">
                 <a class="logo-chip" href="https://www.vita-shoes.com/" target="_blank" rel="noopener noreferrer">
@@ -254,7 +285,6 @@
                 </a>
             </div>
 
-            <!-- duplicado EXACTO -->
             <div class="marquee__group" aria-hidden="true">
                 <a class="logo-chip" href="https://www.vita-shoes.com/" target="_blank" rel="noopener noreferrer" tabindex="-1">
                 <img src="logos/vita-shoes.png" alt="">
@@ -272,55 +302,75 @@
         </div>
     </section>
 
-      <!-- CONTACTO -->
-      <section id="contacto">
-        <div class="section-title">
-          <div>
-            <h2>Contacto</h2>
-            <p>Contame tu caso y avancemos en el entendimiento de tu negocio.</p>
-          </div>
-        </div>
-
-        <div class="contact">
-          <div class="form">
-            <form id="contactForm">
-              <div class="field">
-                <label for="name">Nombre</label>
-                <input id="name" name="name" autocomplete="name" placeholder="Tu nombre" required />
-              </div>
-
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required />
-              </div>
-
-              <div class="field">
-                <label for="company">Empresa / Proyecto</label>
-                <input id="company" name="company" placeholder="Nombre de la empresa (opcional)" />
-              </div>
-
-              <div class="field">
-                <label for="message">¿En qué puedo ayudarte?</label>
-                <p class="subtle" style="margin-top:8px;">
-                  Contame qué decisión querés tomar con datos y de dónde salen (Excel, ERP, DB, etc).
-                </p>
-                <textarea id="message" name="message" placeholder="Ej: Quiero entender rentabilidad por producto y automatizar reportes semanales." required></textarea>
-              </div>
-
-              <button class="btn primary" type="submit">Enviar</button>
-            </form>
-          </div>
-
-          <aside class="contact-aside">
-            <div class="contact-card">
-              <h4>Claridad antes de decidir</h4>
-              <p>
-                No necesitás tener todo resuelto. Te ayudamos a ordenar la información,
-                entender qué está pasando y decidir con datos confiables.
-              </p>
+      <section id="contacto" class="contact-section section-dark">
+        <div class="container">
+            <div class="section-title contact-title">
+            <div>
+                <h2>Empecemos a trabajar</h2>
+                <p>Contanos tu desafío y veamos cómo los datos pueden resolverlo.</p>
             </div>
-          </aside>
+            </div>
 
+            <div class="contact-wrapper">
+            <div class="contact contact-layout">
+                <div class="form contact-form">
+                <form id="contactForm">
+                    <div class="field">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" autocomplete="name" placeholder="Tu nombre" required />
+                    </div>
+
+                    <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@email.com" required />
+                    </div>
+
+                    <div class="field">
+                    <label for="company">Empresa</label>
+                    <input id="company" name="company" placeholder="Nombre de tu empresa" />
+                    </div>
+
+                    <div class="field">
+                    <label for="message">¿Qué te gustaría mejorar?</label>
+                    <p class="subtle" style="margin-top:8px; color: var(--muted-on-dark); font-size: 14px;">
+                        Contame qué decisión querés tomar con datos y de dónde salen hoy.
+                    </p>
+                    <textarea id="message" name="message" placeholder="Ej: Necesito automatizar mis reportes de ventas semanales y entender la rentabilidad por producto..." required></textarea>
+                    </div>
+
+                    <button class="btn primary" type="submit" style="width:100%; justify-content:center; font-size: 16px;">Enviar Consulta</button>
+                </form>
+                </div>
+
+                <aside class="contact-aside">
+                <div class="benefits-section contact-benefits">
+                    <h3>¿Por qué elegirnos?</h3>
+                    <div class="benefits-list">
+                    <div class="benefit-item">
+                        <h4>Tomar decisiones con confianza</h4>
+                        <p>Basadas en datos claros, no en suposiciones.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Ahorrar tiempo todas las semanas</h4>
+                        <p>Menos reportes manuales, más foco en el negocio.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Detectar oportunidades antes que otros</h4>
+                        <p>Los datos empiezan a trabajar para vos.</p>
+                    </div>
+                    <div class="benefit-item">
+                      <h4>Empezar chico y escalar</h4>
+                      <p>Atacamos lo crítico primero, sin inversiones grandes ni sistemas complejos.</p>
+                  </div>
+                  <div class="benefit-item">
+                    <h4>Recuperar control sobre tu información</h4>
+                    <p>Los datos dejan de ser un problema y pasan a ser una ventaja.</p>
+                </div>
+                    </div>
+                </div>
+                </aside>
+            </div>
+            </div>
         </div>
       </section>
 
@@ -329,39 +379,118 @@
         <div class="footer-row container">
           <div>© <span id="year"></span> Rodil Data Studio</div>
           <div style="display:flex; gap:12px; flex-wrap:wrap;">
-            <a href="#top" style="color:var(--muted);">Arriba</a>
+            <a href="#top" style="color:var(--muted);">Volver arriba</a>
             <span style="color:var(--line);">•</span>
-            <a href="#contacto" style="color:var(--muted);">Contacto</a>
+            <a href="mailto:contacto@rodil.com" style="color:var(--muted);">contacto@rodil.com</a>
           </div>
         </div>
       </footer>
-    </div>
   </main>
+  </div>
 
   <script>
-    // Scroll to top al cargar la página
-    window.addEventListener('load', () => {
-      window.scrollTo(0, 0);
-    });
-    
-    // También asegurar scroll to top si hay hash en la URL
-    if (window.location.hash) {
-      window.addEventListener('load', () => {
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-        }, 100);
+    // Año automático en footer
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  
+    // Inicializar EmailJS
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Reemplazar con tu Public Key de EmailJS
+    })();
+
+    // Manejo del formulario con EmailJS
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = contactForm.querySelector('button');
+        const originalText = btn.textContent;
+        
+        btn.textContent = "Enviando...";
+        btn.disabled = true;
+        btn.style.opacity = "0.8";
+
+        try {
+          // Enviar notificación a tu email usando template "Contact Us"
+          await emailjs.send(
+            'YOUR_SERVICE_ID',      // Reemplazar con tu Service ID
+            'template_contact_us',  // Template predefinido "Contact Us" de EmailJS
+            {
+              from_name: contactForm.name.value,
+              from_email: contactForm.email.value,
+              company: contactForm.company.value || 'No especificada',
+              message: contactForm.message.value,
+              reply_to: contactForm.email.value  // Para poder responder directamente
+            }
+          );
+
+          // Enviar respuesta automática al usuario usando template "Auto-Reply"
+          await emailjs.send(
+            'YOUR_SERVICE_ID',      // Reemplazar con tu Service ID
+            'template_auto_reply',  // Template predefinido "Auto-Reply" de EmailJS
+            {
+              to_name: contactForm.name.value,
+              to_email: contactForm.email.value
+            }
+          );
+
+          alert("¡Mensaje recibido! Te contactaremos pronto.");
+          contactForm.reset();
+        } catch (error) {
+          console.error('Error al enviar:', error);
+          alert("Hubo un error al enviar el mensaje. Por favor intenta nuevamente o contáctanos directamente.");
+        } finally {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.style.opacity = "1";
+        }
       });
     }
 
-    document.getElementById('year').textContent = new Date().getFullYear()
+    // Animación al hacer scroll para problemas y soluciones
+    const comparisonObserverOptions = {
+      threshold: 0.3,
+      rootMargin: '0px 0px -50px 0px'
+    };
 
-    document.getElementById('contactForm').addEventListener('submit', (e) => {
-      e.preventDefault()
-      const data = new FormData(e.target)
-      const name = (data.get('name') || '').toString().trim()
-      alert(`Gracias, ${name || 'listo'} ✅\n\n(Esto es demo. Luego lo conectamos a envío real.)`)
-      e.target.reset()
-    })
+    const comparisonObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Aparece cuando entra en vista (scroll hacia abajo)
+          entry.target.classList.add('active');
+        } else {
+          // Desaparece cuando sale de vista (scroll hacia arriba)
+          entry.target.classList.remove('active');
+        }
+      });
+    }, comparisonObserverOptions);
+
+    // Observar todas las filas de comparación
+    document.querySelectorAll('.comp-row').forEach(row => {
+      comparisonObserver.observe(row);
+    });
+
   </script>
+
+  <script>
+    // Forzar scroll al inicio al cargar la página
+    window.addEventListener('load', function() {
+      window.scrollTo(0, 0);
+      // También forzar después de un pequeño delay por si hay algún script que mueva el scroll
+      setTimeout(function() {
+        window.scrollTo(0, 0);
+      }, 100);
+    });
+
+    // También forzar al inicio si hay un hash en la URL pero queremos empezar arriba
+    if (window.location.hash) {
+      window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+      });
+    }
+  </script>
+
 </body>
 </html>

@@ -1493,7 +1493,7 @@ textarea {
 .contact-section.section-dark .contact-form input:focus,
 .contact-section.section-dark .contact-form textarea:focus {
     border-color: rgba(189, 216, 233, 0.5);
-    background: #7BBDE8;
+    background: #0A4174;
     box-shadow: 0 0 0 4px rgba(189, 216, 233, 0.2);
     color: #ffffff;
 }

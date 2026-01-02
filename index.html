@@ -387,6 +387,7 @@
       </footer>
   </main>
   </div>
+  <!-- test -->
 
   <script>
     // Año automático en footer
@@ -397,7 +398,7 @@
   
     // Inicializar EmailJS
     (function(){
-      emailjs.init("YOUR_PUBLIC_KEY"); // Reemplazar con tu Public Key de EmailJS
+      emailjs.init("Qr7PE1RaHwi9kGD0Q"); // Reemplazar con tu Public Key de EmailJS
     })();
 
     // Manejo del formulario con EmailJS
@@ -415,8 +416,8 @@
         try {
           // Enviar notificación a tu email usando template "Contact Us"
           await emailjs.send(
-            'YOUR_SERVICE_ID',      // Reemplazar con tu Service ID
-            'template_contact_us',  // Template predefinido "Contact Us" de EmailJS
+            'service_2loh3eo',      
+            'template_v8xxugw',  // Template predefinido "Contact Us" de EmailJS
             {
               from_name: contactForm.name.value,
               from_email: contactForm.email.value,
@@ -428,8 +429,8 @@
 
           // Enviar respuesta automática al usuario usando template "Auto-Reply"
           await emailjs.send(
-            'YOUR_SERVICE_ID',      // Reemplazar con tu Service ID
-            'template_auto_reply',  // Template predefinido "Auto-Reply" de EmailJS
+            'service_2loh3eo',      
+            'template_n93vn8k',  // Template predefinido "Auto-Reply" de EmailJS
             {
               to_name: contactForm.name.value,
               to_email: contactForm.email.value
